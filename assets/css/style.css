@@ -1,25 +1,84 @@
 :root{
-  --bgcolor: #323840;
-  --tpcolor:#974f9f;
-  --bpcolor: #6C4674;
-  --pgradient: background-image: linear-gradient ()
+  --nyanza: #EAF9D9;
+  --blueMunsell:#2292A4;
+  --chocolateWeb: #D96C06;
+  --darkByzantium: #542344;
+
 
 
 }
 
 body {
-  background-color: var(--bgcolor);
-  color: #fff;
+  background-color: var(--nyanza);
+  color: var(--darkByzantium);
   width: auto;
   
 }
 
 header {
+  height:200px;
+  display:flex;
+  width:auto;
+  background-color: var(--blueMunsell);
+  padding:20px 10px;
 
+
+}
+header div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  width:100%;
+
+}
+img{
+  max-width: 200px;
+  height:auto;
+  border: 3px solid var(--chocolateWeb);
+  border-radius: 100%;
+}
+
+h1{
+  color: var(--nyanza);
+  font-size: 40px;
+  padding:10px;
+
+  }
+
+.navlink{
+  text-decoration: underline;
+  color: var(--darkByzantium);
+  padding-left:10px;
+  font-size:25px;
+
+  
+}
+nav {
+  /* display: flex; */
+  float:right;
+  /* justify-content: flex-end; */
+
+
+}
+
+nav ul{
+  /* float:right; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: end;
 }
 
 main {
 }
+.subheader{
+  color: var(--chocolateWeb);
+
+  font-size: 30px;
+  padding:10px;
+
+  }
 
 section{
 }
@@ -27,30 +86,49 @@ section{
 article{
 
 }
-
-.container{
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-
+.bio{
+  padding:10px;
 
 }
 
-.card {
+.container{
+  width:100%;
+  height:auto;
+  background-color: #2292A4;
 
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.cardContainer {
+  display:flex;
+  flex-direction:column;
+  width:33%;
   height: 250px;
   margin: 10px;
   padding: 10px;
-
+  background-color: #D96C06;
 }
 
-h1{
-color: var(--tpcolor);
-border: 2px solid grey;
+.cardHeader{
+  font-size: 30px;
+  color:var(--nyanza);
+  flex-wrap: wrap;
+
 }
-.purple-box{
-background-color: var(--bpcolor);
+.cardDetail{
+
+  
+}.cardContent{
+  background-color: var(--blueMunsell);
+  height:100%;
+  width:100%;
+  padding: 10px;
+  color:var(--nyanza)
+  border: 0;
+  border-radius: 0;
 }
 
 footer {
