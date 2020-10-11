@@ -20,7 +20,7 @@ header {
   display:flex;
   width:auto;
   background-color: var(--blueMunsell);
-  padding:20px 10px;
+  padding:10px 10px;
 
 
 }
@@ -41,8 +41,10 @@ img{
 
 h1{
   color: var(--nyanza);
+  width:100%;
   font-size: 40px;
   padding:10px;
+  flex-wrap: nowrap;
 
   }
 
@@ -51,23 +53,21 @@ h1{
   color: var(--darkByzantium);
   padding-left:10px;
   font-size:25px;
-
-  
+  justify-content: flex-end;
+  flex-wrap: nowrap;
 }
+
 nav {
-  /* display: flex; */
-  float:right;
-  /* justify-content: flex-end; */
-
-
+  width:100%;
+  flex-wrap:nowrap;
+  justify-content: flex-end;
 }
 
 nav ul{
-  /* float:right; */
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 main {
@@ -80,21 +80,17 @@ main {
 
   }
 
-section{
-}
 
-article{
-
-}
 .bio{
   padding:10px;
+  background-color: var(--nyanza);
 
 }
 
 .container{
   width:100%;
   height:auto;
-  background-color: #2292A4;
+  background-color: var(--nyanza);
 
   display:flex;
   flex-wrap: wrap;
@@ -105,8 +101,9 @@ article{
 .cardContainer {
   display:flex;
   flex-direction:column;
-  width:33%;
-  height: 250px;
+  align-items: center;
+  max-width:250px;
+  height: auto;
   margin: 10px;
   padding: 10px;
   background-color: #D96C06;
@@ -119,22 +116,26 @@ article{
 
 }
 .cardDetail{
+  /* This is already inheriting width:auto from body */
+  flex-wrap: nowrap;
 
   
-}.cardContent{
+}
+.cardContent{
   background-color: var(--blueMunsell);
   height:100%;
   width:100%;
-  padding: 10px;
-  color:var(--nyanza)
+  padding: 0px;
+  color:var(--nyanza);
   border: 0;
   border-radius: 0;
+  /* align-items:center; */
 }
 
 footer {
 }
 
-@media screen and (max-width: 968px) {
+/* @media screen and (max-width: 968px) {
   main,
   nav {
     flex-direction: column;
@@ -146,4 +147,4 @@ footer {
   nav {
     flex-direction: column;
   }
-}
+} */
